@@ -1,5 +1,3 @@
-import java.awt.print.Book;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -8,9 +6,9 @@ public class Main {
         Author author = new Author("Aleksandr", "Pushkin");
         Author author1 = new Author("Lev", "Tolstoy");
 
-
         System.out.println(book.getYear());
         book.setYear(1980);
         System.out.println(book.getYear());
+        System.out.println(book.getAuthor());
     }
 }
