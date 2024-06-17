@@ -1,5 +1,16 @@
+import java.awt.print.Book;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Book book = new Book("Onegin", "Pushkin Aleksandr", 1833);
+        Book book1 = new Book("War and Peace", "Tolstoy Lev", 1867);
+        Author author = new Author("Aleksandr", "Pushkin");
+        Author author1 = new Author("Lev", "Tolstoy");
+
+
+        System.out.println(book.getYear());
+        book.setYear(1980);
+        System.out.println(book.getYear());
     }
 }
